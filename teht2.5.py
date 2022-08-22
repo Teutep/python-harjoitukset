@@ -22,7 +22,9 @@ LuoditGram = LuoditLkm*Gramma
 NaulatGram = NaulatLkm*NaulatArvo
 LeiviskätGram = LeiviskätLkm*LeiviskätArvo
 Yhteensä = LuoditGram + NaulatGram + LeiviskätGram
-Kilogramma = math.floor(Yhteensä)
+
+Kilogramma = Yhteensä/1000
+Loput = Yhteensä-math.floor(Kilogramma)*1000
 
 #Vastaus
-print(f"Massa nykymittojen mukaan: {Yhteensä} grammaa")
+print(f"Massa nykymittojen mukaan: {math.floor(Kilogramma)} kilogrammaa ja {Loput} grammaa")
