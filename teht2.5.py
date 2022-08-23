@@ -10,8 +10,8 @@
 
 import math
 #Kyselyt
-LeiviskätLkm = int(input("Anna leiviskät: "))
-NaulatLkm = int(input("Anna naulat: "))
+LeiviskätLkm = float(input("Anna leiviskät: "))
+NaulatLkm = float(input("Anna naulat: "))
 LuoditLkm = float(input("Anna luodit: "))
 
 #Laskutoimitukset
@@ -27,4 +27,4 @@ Kilogramma = Yhteensä/1000
 Loput = Yhteensä-math.floor(Kilogramma)*1000
 
 #Vastaus
-print(f"Massa nykymittojen mukaan: {math.floor(Kilogramma)} kilogrammaa ja {Loput} grammaa")
+print(f"Massa nykymittojen mukaan: {math.floor(Kilogramma)} kilogrammaa ja {Loput:0.2f} grammaa")
