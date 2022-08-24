@@ -9,5 +9,4 @@ Numero2 = ""
 for x in range(0,4):
     Numero2 += str(random.randint(1,6))
 
-print(f"Kolminumeroinen luku: {Numero}")
-print(f"Nelinumeroinen luku: {Numero2}")
+print(f"Kolminumeroinen luku: {Numero} \nNelinumeroinen luku: {Numero2}")
